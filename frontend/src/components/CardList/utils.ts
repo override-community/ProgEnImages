@@ -1,12 +1,12 @@
-import { ImageCard } from "../../data/cardlist";
+import { TImageCard } from "../../types";
 
-export function filterByCategory(cards: ImageCard[], category: string) {
+export function filterByCategory(cards: TImageCard[], category: string) {
   return category === ""
     ? cards
     : cards.filter((card) => card.category === category);
 }
 
-export function filterBySearchInput(cards: ImageCard[], searchInput: string) {
+export function filterBySearchInput(cards: TImageCard[], searchInput: string) {
   const inputValue = searchInput.trim().toLowerCase();
 
   return inputValue === ""

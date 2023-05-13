@@ -1,14 +1,6 @@
-export type ImageCard = {
-  id: number;
-  name: string;
-  src: string;
-  alt: string;
-  description: string;
-  author: string;
-  category: string;
-};
+import { TImageCard } from "../types";
 
-export const CARDLIST: ImageCard[] = [
+export const CARDLIST: TImageCard[] = [
   {
     id: 1,
     name: "How To Learn",

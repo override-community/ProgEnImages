@@ -3,21 +3,25 @@ import { useMemo, useContext } from "react";
 import { formatCategories } from "./utils";
 import { Form, Row, Col } from "react-bootstrap";
 import { AppContext } from "../../context/AppContext";
-import style from "./Filters.module.scss";
 import { Select } from "../../ui/Select/Select";
+import { Locale, LocaleContext } from "../../context/LocaleContext";
+import style from "./Filters.module.scss";
+import contents from "../../contents.json";
+import { Input } from "../../ui/Input";
 
 export function Filters() {
   const categories = useMemo(() => formatCategories(CARDLIST), []);
-
+  const { locale } = useContext(LocaleContext);
   const { setSelectedCategory, setSearch } = useContext(AppContext);
+  const contentsLocale = contents[locale as Locale];
 
   return (
     <section className={style.filters}>
-      <h2>Filtres</h2>
+      <h2>{contentsLocale.filters.title}</h2>
       <Row>
         <Col xs={12} md={4}>
           <Select
-            label='Categorie'
+            label={contentsLocale.filters.labels.category}
             options={categories}
             onChange={setSelectedCategory}
           />
@@ -29,16 +33,11 @@ export function Filters() {
           </Form.Select>
         </Col>
         <Col xs={12} md={4}>
-          <Form.Label htmlFor='search'>Recherche: </Form.Label>
-          <Form.Control
-            type='text'
-            placeholder='Recherche'
-            id='search'
-            onChange={(e) => setSearch(e.target.value)}
+          <Input
+            onChange={setSearch}
+            label={contentsLocale.filters.labels.search}
+            helpertext={contentsLocale.filters.searchHelp}
           />
-          <Form.Text id='searchHelpText' muted>
-            Recherche par nom, description, auteur
-          </Form.Text>
         </Col>
       </Row>
     </section>
