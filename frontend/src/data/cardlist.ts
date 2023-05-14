@@ -82,4 +82,13 @@ export const CARDLIST: TImageCard[] = [
     author: "Fab16",
     category: "Basics",
   },
+  {
+    id: 10,
+    name: "How To Learn eheh",
+    src: "/assets/howtolearn.png",
+    alt: "",
+    description: "Ma nouvelle carte",
+    author: "Fab16",
+    category: "Other",
+  },
 ];
