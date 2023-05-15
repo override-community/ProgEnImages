@@ -1,0 +1,24 @@
+{
+  "fr": {
+    "filters": {
+      "title": "Filtres",
+      "labels": {
+        "category": "Catégorie",
+        "sort": "Trier par",
+        "search": "Rechercher"
+      },
+      "searchHelp": "Rechercher par nom, description ou catégorie"
+    }
+  },
+  "en": {
+    "filters": {
+      "title": "Filters",
+      "labels": {
+        "category": "Category",
+        "sort": "Sort by",
+        "search": "Search"
+      },
+      "searchHelp": "Search by name, description or category"
+    }
+  }
+}
