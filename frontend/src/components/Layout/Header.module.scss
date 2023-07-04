@@ -13,13 +13,18 @@
   width: 300px;
 }
 
-.reseau a {
-  text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
+.reseau {
+  
+  a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    img{
+      width: 15%;
+      height: 15%;
+    }
+  }
 }
 
-.reseau a img{
-  width: 15%;
-  height: 15%;
-}
+ 
