@@ -18,3 +18,11 @@ export function filterBySearchInput(cards: TImageCard[], searchInput: string) {
           card.author.toLowerCase().includes(inputValue)
       );
 }
+
+export function sortCards(filteredCards: any[], sortOrder: "A-Z" | "Z-A") {
+    if (sortOrder === "Z-A") {
+        return filteredCards.toSorted((a,b) => b.name.localeCompare(a.name))
+    }
+
+    return filteredCards.toSorted((a, b) => a.name.localeCompare(b.name));
+}
