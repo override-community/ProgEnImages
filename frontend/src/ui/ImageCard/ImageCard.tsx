@@ -1,6 +1,6 @@
-import { Card } from "react-bootstrap";
-import { TImageCard } from "../../types";
-import style from "./ImageCard.module.scss";
+import { Card } from 'react-bootstrap';
+import { TImageCard } from '../../types';
+import style from './ImageCard.module.scss';
 
 type ImageCardProps = {
   card: TImageCard;
@@ -12,12 +12,12 @@ export function ImageCard({ card }: ImageCardProps) {
       <Card.Img variant='top' src={`/ProgEnImages/${card.src}`} />
       <Card.Body>
         <Card.Title>{card.name}</Card.Title>
-        <Card.Subtitle className='mb-2 text-muted'>
-          Publiée par: {card.author}{" "}
-        </Card.Subtitle>
+        <Card.Subtitle className='mb-2 text-muted'>Publiée par: {card.author} </Card.Subtitle>
         <Card.Text>
-          Catégorie: <span className='fw-bold'>{card.category}</span>{" "}
+          Catégorie: <span className='fw-bold'>{card.category}</span>{' '}
         </Card.Text>
+        <hr />
+
         <Card.Text>{card.description}</Card.Text>
       </Card.Body>
     </Card>
