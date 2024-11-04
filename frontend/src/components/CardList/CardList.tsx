@@ -6,6 +6,7 @@ import { AppContext } from "../../context/AppContext";
 import {filterByCategory, filterBySearchInput, sortCards} from "./utils";
 import { ImageCard } from "../../ui/ImageCard/";
 
+
 export function CardList() {
     const { selectedCategory, search, selectedSort } = useContext(AppContext); // Récupérer selectedSort
 

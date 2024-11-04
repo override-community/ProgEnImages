@@ -258,6 +258,7 @@ export const CARDLIST: TImageCard[] = [
     name: "Destructeur",
     src: "/assets/destructeur.png",
     alt: "",
+
     description: "Un destructeur est une méthode spéciale qui est utilisé pour détruire un objet lorsqu'il n'est plus nécessaire. Le rôle du destructeur est de libérer les ressources utilisées par l'objet, comme la mémoire ou les fichiers ouverts.",
     author: "Fabien Poirier",
     category: "POO",
@@ -279,6 +280,7 @@ export const CARDLIST: TImageCard[] = [
     description: "L'encapsulation est un principe de la programmation orientée objet qui consiste à protéger les données d'un objet en les rendant privées et en contrôlant l'accès à ces données via des méthodes publiques. Cela signifie que l'on peut cacher les détails internes d'un objet tout en permettant d'interagir avec lui de manière sécurisée.",
     author: "Fabien Poirier",
     category: "POO",
+
   },
   {
     id: 32,
