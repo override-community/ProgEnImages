@@ -1,6 +1,6 @@
 import { createContext, useMemo, useState } from "react";
 
-type SortValues = "A-Z" | "Z-A";
+export type SortValues = "A-Z" | "Z-A";
 
 type AppContextType = {
     selectedCategory: string;

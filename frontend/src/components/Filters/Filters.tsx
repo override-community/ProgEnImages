@@ -2,7 +2,7 @@ import { CARDLIST } from "../../data/cardlist";
 import { useMemo, useContext } from "react";
 import { formatCategories } from "./utils";
 import { Form, Row, Col } from "react-bootstrap";
-import { AppContext } from "../../context/AppContext";
+import { AppContext, SortValues } from "../../context/AppContext";
 import { Select } from "../../ui/Select/Select";
 import { Locale, LocaleContext } from "../../context/LocaleContext";
 import style from "./Filters.module.scss";
