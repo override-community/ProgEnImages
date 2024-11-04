@@ -17,7 +17,7 @@ export function filterBySearchInput(cards: TImageCard[], searchInput: string) {
       );
 }
 
-export function sortCards(filteredCards: { name: string }[], sortOrder: 'A-Z' | 'Z-A') {
+export function sortCards(filteredCards: TImageCard[], sortOrder: 'A-Z' | 'Z-A') {
   if (sortOrder === 'Z-A') {
     return filteredCards.toSorted((a, b) => b.name.localeCompare(a.name));
   }
