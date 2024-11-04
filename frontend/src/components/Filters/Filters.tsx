@@ -28,7 +28,7 @@ export function Filters() {
           </Col>
           <Col xs={12} md={4}>
             <Form.Label>Trier par: </Form.Label>
-            <Form.Select defaultValue='A-Z' onChange={(e) => setSelectedSort(e.target.value)}>
+            <Form.Select defaultValue='A-Z' onChange={(e) => setSelectedSort(e.target.value as SortValues)}>
               <option value='A-Z'>Ordre alphabétique (A-Z)</option>
               <option value='Z-A'>Ordre désalphabetique (Z-A)</option>
             </Form.Select>

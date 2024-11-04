@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Row, Col } from "react-bootstrap";
 import { CARDLIST } from "../../data/cardlist";
 import style from "./CardList.module.scss";
 import { AppContext } from "../../context/AppContext";
@@ -12,8 +11,6 @@ export function CardList() {
 
     const filteredByCategorieCards = filterByCategory(CARDLIST, selectedCategory);
     const filteredByResearchInputCards = filterBySearchInput(filteredByCategorieCards, search);
-
-    // Tri des cartes selon la méthode de tri sélectionnée
     const sortedCards = sortCards(filteredByResearchInputCards, selectedSort);
 
     return (
