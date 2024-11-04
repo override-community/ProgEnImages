@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Row, Col } from "react-bootstrap";
 import { CARDLIST } from "../../data/cardlist";
 import style from "./CardList.module.scss";
 import { AppContext } from "../../context/AppContext";
